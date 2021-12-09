@@ -1,20 +1,32 @@
 header {
   image = "https://raw.githubusercontent.com/mineiros-io/brand/3bffd30e8bdbbde32c143e2650b2faa55f1df3ea/mineiros-primary-logo.svg"
-  url   = "https://mineiros.io/?ref=terraform-google-network-vpc"
+  url   = "https://mineiros.io/?ref=terraform-module-template"
 
-  badge "Terraform Version" {
+  badge "build" {
+    image = "https://github.com/mineiros-io/terraform-module-template/workflows/Tests/badge.svg"
+    url   = "https://github.com/mineiros-io/terraform-module-template/actions"
+    text  = "Build Status"
+  }
+
+  badge "semver" {
+    image = "https://img.shields.io/github/v/tag/mineiros-io/terraform-module-template.svg?label=latest&sort=semver"
+    url   = "https://github.com/mineiros-io/terraform-module-template/releases"
+    text  = "GitHub tag (latest SemVer)"
+  }
+
+  badge "terraform" {
     image = "https://img.shields.io/badge/Terraform-1.x-623CE4.svg?logo=terraform"
     url   = "https://github.com/hashicorp/terraform/releases"
     text  = "Terraform Version"
   }
 
-  badge "Google Provider Version" {
-    image = "https://img.shields.io/badge/google-3.x-1A73E8.svg?logo=terraform"
+  badge "tf-gcp-provider" {
+    image = "https://img.shields.io/badge/google-4-1A73E8.svg?logo=terraform"
     url   = "https://github.com/terraform-providers/terraform-provider-google/releases"
     text  = "Google Provider Version"
   }
 
-  badge "Join Slack" {
+  badge "slack" {
     image = "https://img.shields.io/badge/slack-@mineiros--community-f32752.svg?logo=slack"
     url   = "https://mineiros.io/slack"
     text  = "Join Slack"
