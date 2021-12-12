@@ -38,10 +38,10 @@ section {
   toc     = true
   content = <<-END
     A [Terraform](https://www.terraform.io) module to create a [Google Network Vpc](https://cloud.google.com/compute/docs/reference/rest/v1/networks) on [Google Cloud Services (GCP)](https://cloud.google.com/).
-    
+
     **_This module supports Terraform version 1
     and is compatible with the Terraform Google Provider version 3._**
-    
+
     This module is part of our Infrastructure as Code (IaC) framework
     that enables our users and customers to easily deploy and manage reusable,
     secure, and production-grade cloud infrastructure.
@@ -58,11 +58,11 @@ section {
     title   = "Getting Started"
     content = <<-END
       Most basic usage just setting required arguments:
-      
+
       ```hcl
       module "terraform-google-network-vpc" {
         source = "github.com/mineiros-io/terraform-google-network-vpc.git?ref=v0.1.0"
-      
+
         project = "example-project-id"
       }
       ```
@@ -97,8 +97,8 @@ section {
           END
           readme_example = <<-END
             module_depends_on = [
-                google_project.project_id
-              ]
+              google_project.project_id
+            ]
           END
         }
       }
@@ -171,13 +171,13 @@ section {
     title   = "Module Attributes Reference"
     content = <<-END
       The following attributes are exported in the outputs of the module:
-      
+
       - **`module_enabled`**
-      
+
         Whether this module is enabled.
-      
+
       - **`vpc`**
-      
+
         The outputs of the created VPC.
     END
   }
@@ -187,7 +187,7 @@ section {
     content = <<-END
       - Google Documentation:
         - Networks: https://cloud.google.com/compute/docs/reference/rest/v1/networks
-      
+
       - Terraform Google Provider Documentation:
         - https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_network
     END
@@ -197,9 +197,9 @@ section {
     title   = "Module Versioning"
     content = <<-END
       This Module follows the principles of [Semantic Versioning (SemVer)].
-      
+
       Given a version number `MAJOR.MINOR.PATCH`, we increment the:
-      
+
       1. `MAJOR` version when we make incompatible changes,
       2. `MINOR` version when we add functionality in a backwards compatible manner, and
       3. `PATCH` version when we make backwards compatible bug fixes.
@@ -219,10 +219,10 @@ section {
     content = <<-END
       [Mineiros][homepage] is a remote-first company headquartered in Berlin, Germany
       that solves development, automation and security challenges in cloud infrastructure.
-      
+
       Our vision is to massively reduce time and overhead for teams to manage and
       deploy production-grade and secure cloud infrastructure.
-      
+
       We offer commercial support for all of our modules and encourage you to reach out
       if you have any questions or need help. Feel free to email us at [hello@mineiros.io] or join our
       [Community Slack channel][slack].
@@ -256,11 +256,11 @@ section {
     title   = "License"
     content = <<-END
       [![license][badge-license]][apache20]
-      
+
       This module is licensed under the Apache License Version 2.0, January 2004.
       Please see [LICENSE] for full details.
-      
-      Copyright &copy; 2020-2021 [Mineiros GmbH][homepage]
+
+      Copyright &copy; 2020-2022 [Mineiros GmbH][homepage]
     END
   }
 }
