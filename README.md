@@ -1,4 +1,4 @@
-[<img src="https://raw.githubusercontent.com/mineiros-io/brand/3bffd30e8bdbbde32c143e2650b2faa55f1df3ea/mineiros-primary-logo.svg" width="400"/>](https://mineiros.io/?ref=terraform-module-template)
+[<img src="https://raw.githubusercontent.com/mineiros-io/brand/3bffd30e8bdbbde32c143e2650b2faa55f1df3ea/mineiros-primary-logo.svg" width="400"/>](https://mineiros.io/?ref=terraform-google-network-vpc)
 
 [![Build Status](https://github.com/mineiros-io/terraform-google-network-vpc/workflows/Tests/badge.svg)](https://github.com/mineiros-io/terraform-google-network-vpc/actions)
 [![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/mineiros-io/terraform-google-network-vpc.svg?label=latest&sort=semver)](https://github.com/mineiros-io/terraform-google-network-vpc/releases)
@@ -193,7 +193,7 @@ Copyright &copy; 2020-2022 [Mineiros GmbH][homepage]
 [homepage]: https://mineiros.io/?ref=terraform-google-network-vpc
 [hello@mineiros.io]: mailto:hello@mineiros.io
 [badge-build]: https://github.com/mineiros-io/terraform-google-network-vpc/workflows/Tests/badge.svg
-[badge-semver]: https://img.shields.io/github/v/tag/mineiros-io/terraform-module-template.svg?label=latest&sort=semver
+[badge-semver]: https://img.shields.io/github/v/tag/mineiros-io/terraform-google-network-vpc.svg?label=latest&sort=semver
 [badge-license]: https://img.shields.io/badge/license-Apache%202.0-brightgreen.svg
 [badge-terraform]: https://img.shields.io/badge/Terraform-1.x-623CE4.svg?logo=terraform
 [badge-slack]: https://img.shields.io/badge/slack-@mineiros--community-f32752.svg?logo=slack
