@@ -1,16 +1,16 @@
 header {
   image = "https://raw.githubusercontent.com/mineiros-io/brand/3bffd30e8bdbbde32c143e2650b2faa55f1df3ea/mineiros-primary-logo.svg"
-  url   = "https://mineiros.io/?ref=terraform-module-template"
+  url   = "https://mineiros.io/?ref=terraform-google-network-vpc"
 
   badge "build" {
-    image = "https://github.com/mineiros-io/terraform-module-template/workflows/Tests/badge.svg"
-    url   = "https://github.com/mineiros-io/terraform-module-template/actions"
+    image = "https://github.com/mineiros-io/terraform-google-network-vpc/workflows/Tests/badge.svg"
+    url   = "https://github.com/mineiros-io/terraform-google-network-vpc/actions"
     text  = "Build Status"
   }
 
   badge "semver" {
-    image = "https://img.shields.io/github/v/tag/mineiros-io/terraform-module-template.svg?label=latest&sort=semver"
-    url   = "https://github.com/mineiros-io/terraform-module-template/releases"
+    image = "https://img.shields.io/github/v/tag/mineiros-io/terraform-google-network-vpc.svg?label=latest&sort=semver"
+    url   = "https://github.com/mineiros-io/terraform-google-network-vpc/releases"
     text  = "GitHub tag (latest SemVer)"
   }
 
@@ -276,7 +276,7 @@ references {
     value = "https://github.com/mineiros-io/terraform-google-network-vpc/workflows/Tests/badge.svg"
   }
   ref "badge-semver" {
-    value = "https://img.shields.io/github/v/tag/mineiros-io/terraform-module-template.svg?label=latest&sort=semver"
+    value = "https://img.shields.io/github/v/tag/mineiros-io/terraform-google-network-vpc.svg?label=latest&sort=semver"
   }
   ref "badge-license" {
     value = "https://img.shields.io/badge/license-Apache%202.0-brightgreen.svg"
