@@ -24,7 +24,6 @@ secure, and production-grade cloud infrastructure.
   - [Top-level Arguments](#top-level-arguments)
     - [Module Configuration](#module-configuration)
     - [Main Resource Configuration](#main-resource-configuration)
-    - [Extended Resource Configuration](#extended-resource-configuration)
 - [Module Attributes Reference](#module-attributes-reference)
 - [External Documentation](#external-documentation)
 - [Module Versioning](#module-versioning)
@@ -114,8 +113,6 @@ See [variables.tf] and [examples/] for details and use-cases.
   Maximum Transmission Unit in bytes. The minimum value for this field is `1460` and the maximum value is `1500` bytes.
 
   Default is `"1460"`.
-
-#### Extended Resource Configuration
 
 ## Module Attributes Reference
 

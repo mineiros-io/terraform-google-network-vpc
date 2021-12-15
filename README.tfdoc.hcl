@@ -160,10 +160,6 @@ section {
           END
         }
       }
-
-      section {
-        title = "Extended Resource Configuration"
-      }
     }
   }
 
