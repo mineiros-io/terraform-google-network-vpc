@@ -24,7 +24,7 @@ secure, and production-grade cloud infrastructure.
   - [Top-level Arguments](#top-level-arguments)
     - [Module Configuration](#module-configuration)
     - [Main Resource Configuration](#main-resource-configuration)
-- [Module Attributes Reference](#module-attributes-reference)
+- [Module Outputs](#module-outputs)
 - [External Documentation](#external-documentation)
 - [Module Versioning](#module-versioning)
   - [Backwards compatibility in `0.0.z` and `0.y.z` version](#backwards-compatibility-in-00z-and-0yz-version)
@@ -114,7 +114,7 @@ See [variables.tf] and [examples/] for details and use-cases.
 
   Default is `"1460"`.
 
-## Module Attributes Reference
+## Module Outputs
 
 The following attributes are exported in the outputs of the module:
 
