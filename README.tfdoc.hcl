@@ -179,14 +179,21 @@ section {
   }
 
   section {
-    title   = "External Documentation"
-    content = <<-END
-      - Google Documentation:
-        - Networks: https://cloud.google.com/compute/docs/reference/rest/v1/networks
+    title = "External Documentation"
 
-      - Terraform Google Provider Documentation:
-        - https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_network
-    END
+    section {
+      title   = "Google Documentation"
+      content = <<-END
+        - https://cloud.google.com/compute/docs/reference/rest/v1/networks
+      END
+    }
+
+    section {
+      title   = "Terraform Google Provider Documentation"
+      content = <<-END
+        - https : //registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_network
+      END
+    }
   }
 
   section {

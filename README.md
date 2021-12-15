@@ -26,6 +26,8 @@ secure, and production-grade cloud infrastructure.
     - [Main Resource Configuration](#main-resource-configuration)
 - [Module Outputs](#module-outputs)
 - [External Documentation](#external-documentation)
+  - [Google Documentation](#google-documentation)
+  - [Terraform Google Provider Documentation](#terraform-google-provider-documentation)
 - [Module Versioning](#module-versioning)
   - [Backwards compatibility in `0.0.z` and `0.y.z` version](#backwards-compatibility-in-00z-and-0yz-version)
 - [About Mineiros](#about-mineiros)
@@ -128,11 +130,13 @@ The following attributes are exported in the outputs of the module:
 
 ## External Documentation
 
-- Google Documentation:
-  - Networks: https://cloud.google.com/compute/docs/reference/rest/v1/networks
+### Google Documentation
 
-- Terraform Google Provider Documentation:
-  - https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_network
+- https://cloud.google.com/compute/docs/reference/rest/v1/networks
+
+### Terraform Google Provider Documentation
+
+- https : //registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_network
 
 ## Module Versioning
 
