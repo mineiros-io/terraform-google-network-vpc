@@ -107,10 +107,9 @@ section {
         title = "Main Resource Configuration"
 
         variable "project" {
-          required    = true
           type        = string
           description = <<-END
-            The ID of the project in which the resources belong.
+            The ID of the project in which the resource belongs. If it is not set, the provider project is used.
           END
         }
 
