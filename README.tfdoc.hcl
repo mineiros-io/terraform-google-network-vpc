@@ -90,8 +90,7 @@ section {
         }
 
         variable "module_depends_on" {
-          type           = any
-          readme_type    = "list(dependencies)"
+          type           = list(dependency)
           description    = <<-END
             A list of dependencies. Any object can be _assigned_ to this list to define a hidden external dependency.
           END
@@ -166,15 +165,21 @@ section {
     title   = "Module Outputs"
     content = <<-END
       The following attributes are exported in the outputs of the module:
-
-      - **`module_enabled`**
-
-        Whether this module is enabled.
-
-      - **`vpc`**
-
-        The outputs of the created VPC.
     END
+
+    output "module_enabled" {
+      type        = bool
+      description = <<-END
+        Whether this module is enabled.
+      END
+    }
+
+    output "vpc" {
+      type        = object(vpc)
+      description = <<-END
+        The outputs of the created VPC.
+      END
+    }
   }
 
   section {
