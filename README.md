@@ -11,7 +11,7 @@
 A [Terraform](https://www.terraform.io) module to create a [Google Network Vpc](https://cloud.google.com/compute/docs/reference/rest/v1/networks) on [Google Cloud Services (GCP)](https://cloud.google.com/).
 
 **_This module supports Terraform version 1
-and is compatible with the Terraform Google Provider version 3._**
+and is compatible with the Terraform Google Provider version 4._**
 
 This module is part of our Infrastructure as Code (IaC) framework
 that enables our users and customers to easily deploy and manage reusable,
@@ -66,7 +66,7 @@ See [variables.tf] and [examples/] for details and use-cases.
 
   Default is `true`.
 
-- [**`module_depends_on`**](#var-module_depends_on): *(Optional `list(dependencies)`)*<a name="var-module_depends_on"></a>
+- [**`module_depends_on`**](#var-module_depends_on): *(Optional `list(dependency)`)*<a name="var-module_depends_on"></a>
 
   A list of dependencies. Any object can be _assigned_ to this list to define a hidden external dependency.
 
@@ -80,9 +80,9 @@ See [variables.tf] and [examples/] for details and use-cases.
 
 #### Main Resource Configuration
 
-- [**`project`**](#var-project): *(**Required** `string`)*<a name="var-project"></a>
+- [**`project`**](#var-project): *(Optional `string`)*<a name="var-project"></a>
 
-  The ID of the project in which the resources belong.
+  The ID of the project in which the resource belongs. If it is not set, the provider project is used.
 
 - [**`name`**](#var-name): *(Optional `string`)*<a name="var-name"></a>
 
@@ -120,11 +120,11 @@ See [variables.tf] and [examples/] for details and use-cases.
 
 The following attributes are exported in the outputs of the module:
 
-- **`module_enabled`**
+- [**`module_enabled`**](#output-module_enabled): *(`bool`)*<a name="output-module_enabled"></a>
 
   Whether this module is enabled.
 
-- **`vpc`**
+- [**`vpc`**](#output-vpc): *(`object(vpc)`)*<a name="output-vpc"></a>
 
   The outputs of the created VPC.
 
@@ -136,7 +136,7 @@ The following attributes are exported in the outputs of the module:
 
 ### Terraform Google Provider Documentation
 
-- https : //registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_network
+- https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_network
 
 ## Module Versioning
 
