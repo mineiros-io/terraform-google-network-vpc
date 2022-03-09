@@ -61,7 +61,7 @@ section {
 
       ```hcl
       module "terraform-google-network-vpc" {
-        source = "github.com/mineiros-io/terraform-google-network-vpc.git?ref=v0.1.0"
+        source = "github.com/mineiros-io/terraform-google-network-vpc.git?ref=v0.0.2"
 
         project = "example-project-id"
       }
