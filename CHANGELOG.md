@@ -7,9 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Removed
+
+- BREAKING: Remove support for Terraform versions before v1.0
+- BREAKING: Remove support for Terraform Google Provider versions before v4.0
+- BREAKING: Remove output `module_enabled`
+
 ### Changed
 
-- Set `var.project` to optional instead of required
+- Change variable `project` to optional instead of required
 
 ## [0.0.2]
 

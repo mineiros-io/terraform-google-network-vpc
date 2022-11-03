@@ -22,8 +22,8 @@ secure, and production-grade cloud infrastructure.
 - [Getting Started](#getting-started)
 - [Module Argument Reference](#module-argument-reference)
   - [Top-level Arguments](#top-level-arguments)
-    - [Module Configuration](#module-configuration)
     - [Main Resource Configuration](#main-resource-configuration)
+  - [Module Configuration](#module-configuration)
 - [Module Outputs](#module-outputs)
 - [External Documentation](#external-documentation)
   - [Google Documentation](#google-documentation)
@@ -57,26 +57,6 @@ module "terraform-google-network-vpc" {
 See [variables.tf] and [examples/] for details and use-cases.
 
 ### Top-level Arguments
-
-#### Module Configuration
-
-- [**`module_enabled`**](#var-module_enabled): *(Optional `bool`)*<a name="var-module_enabled"></a>
-
-  Specifies whether resources in the module will be created.
-
-  Default is `true`.
-
-- [**`module_depends_on`**](#var-module_depends_on): *(Optional `list(dependency)`)*<a name="var-module_depends_on"></a>
-
-  A list of dependencies. Any object can be _assigned_ to this list to define a hidden external dependency.
-
-  Example:
-
-  ```hcl
-  module_depends_on = [
-    google_project.project_id
-  ]
-  ```
 
 #### Main Resource Configuration
 
@@ -116,13 +96,29 @@ See [variables.tf] and [examples/] for details and use-cases.
 
   Default is `"1460"`.
 
+### Module Configuration
+
+- [**`module_enabled`**](#var-module_enabled): *(Optional `bool`)*<a name="var-module_enabled"></a>
+
+  Specifies whether resources in the module will be created.
+
+  Default is `true`.
+
+- [**`module_depends_on`**](#var-module_depends_on): *(Optional `list(dependency)`)*<a name="var-module_depends_on"></a>
+
+  A list of dependencies. Any object can be _assigned_ to this list to define a hidden external dependency.
+
+  Example:
+
+  ```hcl
+  module_depends_on = [
+    google_project.project_id
+  ]
+  ```
+
 ## Module Outputs
 
 The following attributes are exported in the outputs of the module:
-
-- [**`module_enabled`**](#output-module_enabled): *(`bool`)*<a name="output-module_enabled"></a>
-
-  Whether this module is enabled.
 
 - [**`vpc`**](#output-vpc): *(`object(vpc)`)*<a name="output-vpc"></a>
 
