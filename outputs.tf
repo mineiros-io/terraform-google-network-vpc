@@ -10,17 +10,3 @@ output "vpc" {
   description = "The outputs of the created VPC."
   value       = try(google_compute_network.vpc[0], null)
 }
-
-# ------------------------------------------------------------------------------
-# OUTPUT ALL INPUT VARIABLES
-# ------------------------------------------------------------------------------
-
-
-# ------------------------------------------------------------------------------
-# OUTPUT MODULE CONFIGURATION
-# ------------------------------------------------------------------------------
-
-output "module_enabled" {
-  description = "Whether the module is enabled."
-  value       = var.module_enabled
-}
