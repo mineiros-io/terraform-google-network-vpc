@@ -46,7 +46,7 @@ Most basic usage just setting required arguments:
 
 ```hcl
 module "terraform-google-network-vpc" {
-  source = "github.com/mineiros-io/terraform-google-network-vpc.git?ref=v0.1.0"
+  source = "github.com/mineiros-io/terraform-google-network-vpc.git?ref=v0.2.0"
 
   project = "example-project-id"
 }
