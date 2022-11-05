@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Add optional variable `enable_ula_internal_ipv6`
+- Add optional variable `internal_ipv6_range`
+
+### Changed
+
+- BREAKING: Changed minimum provider to `~>4.25`
+
 ## [0.1.0]
 
 ### Removed

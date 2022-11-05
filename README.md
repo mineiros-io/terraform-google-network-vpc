@@ -96,6 +96,18 @@ See [variables.tf] and [examples/] for details and use-cases.
 
   Default is `"1460"`.
 
+- [**`enable_ula_internal_ipv6`**](#var-enable_ula_internal_ipv6): *(Optional `bool`)*<a name="var-enable_ula_internal_ipv6"></a>
+
+  Enable ULA internal ipv6 on this network. Enabling this feature will assign a `/48` from Google defined ULA prefix `fd20::/20`.
+
+  Default is `false`.
+
+- [**`internal_ipv6_range`**](#var-internal_ipv6_range): *(Optional `string`)*<a name="var-internal_ipv6_range"></a>
+
+  When enabling ula internal ipv6, caller optionally can specify the `/48` range they want from the Google defined ULA prefix `fd20::/20`. The input must be a valid `/48` ULA IPv6 address and within the `fd20::/20`. The operation will fail if the specified `/48` is already in use by another resource. If the field is not specified, then a `/48` range will be randomly allocated from `fd20::/20` and returned via this field."
+
+  Default is `null`.
+
 ### Module Configuration
 
 - [**`module_enabled`**](#var-module_enabled): *(Optional `bool`)*<a name="var-module_enabled"></a>
