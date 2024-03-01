@@ -11,7 +11,7 @@
 A [Terraform](https://www.terraform.io) module to create a [Google Network Vpc](https://cloud.google.com/compute/docs/reference/rest/v1/networks) on [Google Cloud Services (GCP)](https://cloud.google.com/).
 
 **_This module supports Terraform version 1
-and is compatible with the Terraform Google Provider version 4._** and 5._**
+and is compatible with the Terraform Google Provider version 5._**
 
 This module is part of our Infrastructure as Code (IaC) framework
 that enables our users and customers to easily deploy and manage reusable,
@@ -95,6 +95,12 @@ See [variables.tf] and [examples/] for details and use-cases.
   Maximum Transmission Unit in bytes. The minimum value for this field is `1460` and the maximum value is `1500` bytes.
 
   Default is `"1460"`.
+
+- [**`network_firewall_policy_enforcement_order`**](#var-network_firewall_policy_enforcement_order): *(Optional `string`)*<a name="var-network_firewall_policy_enforcement_order"></a>
+
+  Set the order that Firewall Rules and Firewall Policies are evaluated. Default value is AFTER_CLASSIC_FIREWALL. Possible values are: BEFORE_CLASSIC_FIREWALL, AFTER_CLASSIC_FIREWALL.
+
+  Default is `null`.
 
 - [**`enable_ula_internal_ipv6`**](#var-enable_ula_internal_ipv6): *(Optional `bool`)*<a name="var-enable_ula_internal_ipv6"></a>
 
