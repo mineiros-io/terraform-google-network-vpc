@@ -54,6 +54,12 @@ variable "auto_create_subnetworks" {
   default     = false
 }
 
+variable "network_firewall_policy_enforcement_order" {
+  description = "(Optional) Set the order that Firewall Rules and Firewall Policies are evaluated. Default value is AFTER_CLASSIC_FIREWALL. Possible values are: BEFORE_CLASSIC_FIREWALL, AFTER_CLASSIC_FIREWALL."
+  type        = string
+  default     = null
+}
+
 variable "mtu" {
   description = "(Optional) Maximum Transmission Unit in bytes. The minimum value for this field is 1460 and the maximum value is 1500 bytes. Default is '1460'."
   type        = string
