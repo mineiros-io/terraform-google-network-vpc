@@ -61,14 +61,9 @@ variable "network_firewall_policy_enforcement_order" {
 }
 
 variable "mtu" {
-  description = "(Optional) Maximum Transmission Unit in bytes. The minimum value for this field is 1460 and the maximum value is 1500 bytes. Default is '1460'."
+  description = "(Optional) Maximum Transmission Unit in bytes. The minimum value for this field is 1300 and the recommended maximum value is 1500 bytes. Default is '1460'."
   type        = string
   default     = 1460
-
-  validation {
-    condition     = var.mtu >= 1460 && var.mtu <= 1500
-    error_message = "The mtu expects a value between '1460' and '1500'."
-  }
 }
 
 variable "enable_ula_internal_ipv6" {
